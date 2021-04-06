@@ -344,14 +344,18 @@ body {
 }
 
 .composition-table__title {
-    text-align: left;
     margin-bottom: 18px;
     padding-left: 27px;
+}
+
+.composition-table__title h3 {
+    text-align: left;
     color: #c1c1c1;
     font-weight: 600;
     line-height: 1.4em;
     font-size: 14px;
     text-transform: uppercase;
+
 }
 
 .composition-table__row {
