@@ -1,0 +1,677 @@
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	display: block;
+}
+
+h1,h2,h3,h4,h5 {
+	font-size: 2em;
+	margin: 0;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+a {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+img {
+	border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+textarea {
+	overflow: auto;
+}
+
+[type='checkbox'],
+[type='radio'] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type='search'] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+
+[type='search']::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+details {
+	display: block;
+}
+
+summary {
+	display: list-item;
+}
+
+template {
+	display: none;
+}
+
+[hidden] {
+	display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F9FF;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18.7px;
+    color: #021B31;
+    padding: 0 15px;
+}
+
+.site-header, .site-main, .site-footer {
+    max-width: 1070px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 36px 0 0 0;
+}
+
+.site-main__container {
+    display: flex;
+    justify-content: center;
+}
+
+.site-main {
+    margin-bottom: 30px;
+}
+
+.site-header, .site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.site-main__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.4em;
+    padding: 0 0 0 15px;
+    /* margin-bottom: 25px; */
+}
+
+.team-composition {
+    padding: 10px 0 19px 0;
+    background-color: #fff;
+    max-width: 800px;
+    width: 100%;
+    margin-right: 30px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.team-composition__tabs {
+    display: flex;
+    padding: 0 28px;
+    justify-content: flex-start;
+    border-bottom: 1px solid #EBEBEB; 
+    margin-bottom: 28px;
+}
+
+.tab-team {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    padding-bottom: 8px;
+    margin-right: 45px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-team:nth-last-child(1) {
+    margin-right: 0
+}
+
+.tab-team__emblem {
+    margin-right: 15px;
+}
+
+.tab-team__emblem img {
+    width: 28px;
+    height: 28px;
+}
+
+.tab-team__title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.168em;
+    color: #184272;
+}
+
+.tab-team--active {
+    background: radial-gradient(57.55% 59.5% at 50.86% 87.5%, rgba(10, 139, 255, 0.17) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.tab-team::after {
+    width: 100%;
+    height: 100%;
+    display: none;
+    content: '';
+    position: absolute;
+    background: radial-gradient(57.55% 59.5% at 50.86% 87.5%, rgba(170, 215, 255, 0.17) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s all linear;
+}
+
+.tab-team:hover::after {
+    display: block;
+}
+
+
+.tab-team:hover::before {
+    display: block;
+    opacity: .2;
+}
+
+.tab-team::before {
+    width: 100%;
+    height: 2px;
+    display: none;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-color: #0A8BFF;
+    transition: 0.3s all linear;
+}
+
+.tab-team--active::before {
+    display: block;
+}
+
+.tab-team--active::after {
+    display: none;
+}
+
+.tab-team--active:hover::after {
+    display: none;
+}
+
+.tab-team--active:hover::before {
+    display: block;
+    opacity: 1;
+}
+
+.composition-table {
+    margin-bottom: 29px;
+}
+
+.composition-table:nth-last-child(1) {
+    margin-bottom: 0px;
+}
+
+.composition-table {
+    text-align: left;
+    width: 100%;
+	border-spacing: 0px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.168em;
+    padding: 0 13px 0 19px;
+}
+
+.composition-table__title {
+    text-align: left;
+    margin-bottom: 18px;
+    padding-left: 27px;
+    color: #c1c1c1;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.composition-table__row {
+    height: 45px;
+}
+
+.comoposition-table__row > .test, .composition-table__country, .composition-table__number, .composition-table__name, .composition-table__position, .composition-table__cards {
+    background-color: #F8F8F8;
+    border-color: #F8F8F8;
+    border-radius: 5px;
+}
+.composition-table__row:nth-child(2n) td {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.composition-table__number, .composition-table__country, .composition-table__position, .composition-table__cards {
+    text-align: center;
+}
+
+.composition-table__number {
+    padding: 0 5px 0 10px;
+}
+
+.composition-table__name {
+    max-width: 357px;
+    width: 45%;
+    padding-right: 10px;
+}
+
+.composition-table__name a {
+    color: #021B31;
+}
+
+.composition-table__name a:hover {
+    text-decoration: underline;
+}
+
+.composition-table__country {
+    padding: 0 20px 0 5px;
+}
+
+.card-yellow::after {
+    content:url(../img/yellow_card.svg);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.card-red::after {
+    content:url(../img/red_card.svg);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.card-transfer::after {
+    content:url(../img/transfer.svg);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.cards__list {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-right: 20px;
+}
+
+.card:nth-last-child(1) {
+    margin: 0;
+}
+
+.none {
+    display: none;
+}
+
+.status {
+    color: #0A8BFF;
+    margin-left: 25px;
+    font-weight: 400;
+}
+
+.stadion__title {
+    margin-bottom: 22px;
+}
+
+.stadion__title h4 {
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: #c1c1c1;
+    text-transform: uppercase;
+}
+
+.stadion-info {
+    background-image: url(../img/stadion.png);
+    max-width: 240px;
+    width: 100%;
+    height: 320px;
+    padding: 22px;
+    padding-bottom: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 34px;
+    border-radius: 10px;
+}
+
+.stadion-info::before {
+    width: 82%;
+    height: 1px;
+    background-color: #fff;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.stadion-info__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stadion-info__city {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.168em;
+}
+.stadion-info__weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.weather-info__temperature {
+    font-size: 36px;
+    line-height: 1.168em;
+    font-weight: 500;
+}
+
+.stadion-info__location {
+    font-weight: 500;
+    line-height: 1.168em;
+    margin-bottom: 32px;
+}
+
+.stadion-info__location a {
+    color: #fff;
+}
+
+.stadion-info__location a:hover {
+    text-decoration: underline;
+}
+
+.stadion-info__location::before {
+    content:url(../img/map.svg);
+    display: block;
+    margin-bottom: 9px;
+}
+
+.stadion-info__count {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stadion-info__count::before {
+    content:url(../img/man.svg);
+    display: block;
+}
+
+.officials__title {
+    margin-bottom: 21px;
+}
+
+.officials__title h4 {
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: #c1c1c1;
+    text-transform: uppercase;
+}
+
+.personal-card {
+    padding: 14px 17px 16px 18px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 21px;
+    position: relative;
+    transition: .2s background-color linear;
+}
+
+.personal-card:hover {
+    background-color: rgb(245, 245, 245);
+    transition: .2s background-color linear;
+}
+
+.personal-card__position {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.168em;
+    color: #c1c1c1;
+    margin-bottom: 10px;
+}
+
+.personal-card__name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.168em;
+    color: #021B31;
+    margin-bottom: 15px;
+}
+
+.personal-card_bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.168em;
+    color: #c1c1c1;
+}
+
+.main-referee::before {
+    content: url(../img/referee.svg);
+    display: block;
+    position: absolute;
+    right: 19px;
+    top: 20px;
+}
+
+.first-assistant::before {
+    content: url(../img/assistans.svg);
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 24px;
+}
+
+.second-assistant::before {
+    content: url(../img/assistans.svg);
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 24px;
+}
+
+.var::before {
+    content: url(../img/var.svg);
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 28px;
+}
+
+.second-team {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .site-main__container {
+        flex-direction: column;
+    }
+
+    .team-composition {
+        margin-right: 0;
+        transition: 0.2s all linear;
+    }
+
+    .card {
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.2s all linear;
+    }
+
+    .card:after {
+        margin: 0;
+        transition: 0.2s all linear;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .stadion-info {
+        width: 100%;
+        max-width: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .site-main__title {
+        font-size: 32px;
+        transition: 0.2s all linear;
+    }
+    .composition-table__row {
+        font-size: 12px;
+        transition: 0.2s all linear;
+    }
+    
+    .composition-table {
+        font-size: 14px;
+        padding: 0 9px 0 9px;
+        transition: 0.2s all linear;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .composition-table__row {
+        font-size: 10px;
+        transition: 0.2s all linear;
+    }
+}
