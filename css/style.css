@@ -631,6 +631,10 @@ body {
         transition: 0.2s all linear;
     }
 
+    .cards__list {
+        padding-right: 0px;
+    }
+
     .card {
         margin-right: 10px;
         display: flex;
