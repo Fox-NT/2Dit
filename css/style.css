@@ -236,7 +236,7 @@ body {
 
 .team-composition__tabs {
     display: flex;
-    padding: 0 28px;
+    padding: 0 30px;
     justify-content: flex-start;
     border-bottom: 1px solid #EBEBEB; 
     margin-bottom: 28px;
@@ -248,7 +248,7 @@ body {
     align-items: center;
     width: 50%;
     padding-bottom: 8px;
-    margin-right: 45px;
+    margin-right: 53px;
     cursor: pointer;
     position: relative;
 }
@@ -340,7 +340,7 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.168em;
-    padding: 0 13px 0 19px;
+    padding: 0 35px 0 19px;
 }
 
 .composition-table__title {
@@ -377,7 +377,7 @@ body {
 }
 
 .composition-table__number {
-    padding: 0 5px 0 10px;
+    padding: 0 5px 0 16px;
 }
 
 .composition-table__name {
@@ -395,7 +395,7 @@ body {
 }
 
 .composition-table__country {
-    padding: 0 20px 0 5px;
+    padding: 0 15px 0 11px;
 }
 
 .card-yellow::after {
@@ -419,10 +419,11 @@ body {
 .cards__list {
     display: flex;
     justify-content: center;
+    padding-right: 48px;
 }
 
 .card {
-    margin-right: 20px;
+    margin-right: 24px;
 }
 
 .card:nth-last-child(1) {
@@ -440,7 +441,7 @@ body {
 }
 
 .stadion__title {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 
 .stadion__title h4 {
